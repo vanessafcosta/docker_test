@@ -1,0 +1,10 @@
+{
+    "name": "vcosta-message-database",
+    "domain": false,
+    "hostname": "vcosta-message-database",
+    "image": "postgres:12",
+    "env": {
+      "POSTGRES_PASSWORD": "@vcosta-postgres-password"
+    },
+    "volumes": ["vcosta_message_database_volume:/var/lib/postgresql/data"]
+  }
